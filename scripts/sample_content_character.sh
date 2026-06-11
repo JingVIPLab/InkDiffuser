@@ -1,0 +1,14 @@
+python sample.py \
+    --ckpt_dir="/home/skc/FontDiffuser/weights/FontDiffuser_double/checkpoint-280000" \
+    --style_image_path="/home/skc/FontDiffuser/data_examples/train/TargetImage/FZYanZQKSJF/FZYanZQKSJF+朝.jpg" \
+    --save_image \
+    --character_input \
+    --content_character="月" \
+    --save_image_dir="outputs/shi" \
+    --device="cuda:0" \
+    --algorithm_type="dpmsolver++" \
+    --guidance_type="classifier-free" \
+    --guidance_scale=7.5 \
+    --num_inference_steps=20 \
+    --method="multistep" \
+    --content_encoder_downsample_size=3
